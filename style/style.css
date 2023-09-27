@@ -1,0 +1,151 @@
+@keyframes pisca {
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+} 
+
+body {
+    margin: 0;
+    background-color: #dbd5c9;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna {
+    max-width: 1200px;
+    height: 80%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tela {
+    width:700px;
+    height:440px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+.d-1 {
+    flex:1;
+    display: flex;
+}
+.d-1-esquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+.d-1-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d-1-2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1-3 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.numero-pisca {
+    animation-name: pisca;
+    animation-duration:1s ;
+    animation-iteration-count: infinite;
+}
+.d-1-4 {
+    flex: 1;
+    line-height: 30px;
+}
+.d-2 {
+    height: 65px;
+    font-size: 18px;
+    border-top: 2px solid #000;
+}
+.d-1-direita {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.d-1-images {
+    border: 1px solid #000;
+    background-color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.d-1-images-small {
+    width: 80%;
+    font-size: 0.9rem;
+}
+.d-1-images img {
+    width: 100%;
+}
+.teclado {
+    background-color: #000;
+    width: 400px;
+    height: 440px;
+    justify-content: center;
+    background-color: #403A3A;
+}
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.teclado--botao {
+    height: 60px;
+    width: 80px;
+    margin: 10px;
+    color: white;
+    background-color: #000;
+    font-size:  2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #999;
+}
+.btn-braco,
+.btn-corrige,
+.btn-confirma {
+    color: #000;
+    font-size: 1.5rem;
+}
+.btn-braco{
+    background-color: white;
+}
+.btn-corrige {
+    background-color: #f09049;
+}
+.btn-confirma {
+    background-color: #48c079;
+    height: 70px;
+    width: 100px;
+}
+.aviso--grande {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.aviso--gigante {
+    font-size: 7rem;
+    font: bold;
+    text-align: center;
+}
